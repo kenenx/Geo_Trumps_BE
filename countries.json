@@ -1,11 +1,155 @@
 [
-    {
-        "name": "United Kingdom",
-        "GDP": 3.8,
-        "Population": 68,
-        "Average Temp": 9.5,
-        "Area":242495,
-        "Establishment": 1922,
-        "Life Expectancy": 80.9
-    }
+  {
+    "id": 1,
+    "country": "Australia",
+    "expectancy": 79.8,
+    "area": 7741220,
+    "temperature": 21.65,
+    "population": 24982688,
+    "independence": 1901
+  },
+  {
+    "id": 2,
+    "country": "France",
+    "expectancy": 78.8,
+    "area": 551500,
+    "temperature": 10.7,
+    "population": 66977107,
+    "independence": 843
+  },
+  {
+    "id": 3,
+    "country": "Germany",
+    "expectancy": 77.4,
+    "area": 357022,
+    "temperature": 8.5,
+    "population": 82905782,
+    "independence": 1955
+  },
+  {
+    "id": 4,
+    "country": "India",
+    "expectancy": 62.5,
+    "area": 3287263,
+    "temperature": 23.65,
+    "population": 1352617328,
+    "independence": 1947
+  },
+  {
+    "id": 5,
+    "country": "Brazil",
+    "expectancy": 62.9,
+    "area": 8547403,
+    "temperature": 24.95,
+    "population": 209469333,
+    "independence": 1822
+  },
+  {
+    "id": 6,
+    "country": "Canada",
+    "expectancy": 79.4,
+    "area": 9970610,
+    "temperature": -5.35,
+    "population": 37057765,
+    "independence": 1867
+  },
+  {
+    "id": 7,
+    "country": "India",
+    "expectancy": 62.5,
+    "area": 3287263,
+    "temperature": 23.65,
+    "population": 1352617328,
+    "independence": 1947
+  },
+  {
+    "id": 8,
+    "country": "Hungary",
+    "expectancy": 71.4,
+    "area": 93030,
+    "temperature": 9.75,
+    "population": 9775564,
+    "independence": 1918
+  },
+  {
+    "id": 9,
+    "country": "Belgium",
+    "expectancy": 77.8,
+    "area": 30518,
+    "temperature": 9.55,
+    "population": 11433256,
+    "independence": 1830
+  },
+  {
+    "id": 10,
+    "country": "Austria",
+    "expectancy": 77.7,
+    "area": 83859,
+    "temperature": 6.35,
+    "population": 8840521,
+    "independence": 1918
+  },
+  {
+    "id": 11,
+    "country": "Barbados",
+    "expectancy": 73,
+    "area": 430,
+    "temperature": 26,
+    "population": 286641,
+    "independence": 1966
+  },
+  {
+    "id": 12,
+    "country": "Belarus",
+    "expectancy": 68,
+    "area": 207600,
+    "temperature": 6.15,
+    "population": 9483499,
+    "independence": 1991
+  },
+  {
+    "id": 13,
+    "country": "Denmark",
+    "expectancy": 76.5,
+    "area": 43094,
+    "temperature": 7.5,
+    "population": 5793636,
+    "independence": 800
+  },
+  {
+    "id": 14,
+    "country": "Greece",
+    "expectancy": 78.4,
+    "area": 131626,
+    "temperature": 15.4,
+    "population": 10731726,
+    "independence": 1830
+  },
+  {
+    "id": 15,
+    "country": "Finland",
+    "expectancy": 77.4,
+    "area": 338145,
+    "temperature": 1.7,
+    "population": 5515525,
+    "independence": 1917
+  },
+  {
+    "id": 16,
+    "country": "United States",
+    "expectancy": 77.1,
+    "area": 9363520,
+    "temperature": 8.55,
+    "population": 326687501,
+    "independence": 1776
+  },
+  {
+    "id": 17,
+    "country": "United Kingdom",
+    "expectancy": 77.7,
+    "area": 242900,
+    "temperature": 8.45,
+    "population": 66460344,
+    "independence": 1066
+  }
 ]
