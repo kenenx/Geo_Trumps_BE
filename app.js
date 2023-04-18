@@ -9,6 +9,7 @@ app.use(express.json())
 app.use(logger);
 
 const countries = require('./countries.json')
+const players = require('./players.json')
 
 app.get('/', (req, res) => {
     res.send(`Welcome to the Geo Trumps API! There are ${countries.length} available.`);
@@ -35,5 +36,27 @@ app.get('/countries/:country', (req, res) => {
     res.send(country)
 })
 
+app.get('/players', (req, res) => {
+    res.send(players);
+})
+
+app.patch("/players/:user", (req, res) => {
+    const player = players.find(
+        (player) => player.user.toLowerCase() === req.params.user.toLowerCase()
+    );
+    if (player === undefined) {
+        player = {
+            user: req.params.user,
+            password: "password",
+            score: 0,
+            id: ++players.length,
+        };
+        players.push(player);
+
+        return res.status(200).send(player);
+    } else {
+        res.send(player);
+    }
+});
 
 module.exports = app;
