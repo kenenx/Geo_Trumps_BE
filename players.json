@@ -1,7 +1,9 @@
 [
     {
         "user":"Kenen",
-        "password":"geo"
+        "password":"geo",
+        "score": 0,
+        "id": 1
     }
 
 ]
