@@ -25,12 +25,12 @@ app.get('/countries/random', (req, res) => {
      res.send(country);
 })
 
-app.get('/countries/:name', (req, res) => {
-    const name = req.params.name.toLowerCase()
+app.get('/countries/:country', (req, res) => {
+    const name = req.params.country.toLowerCase()
 
-    const country = countries.find(country => country.name.toLowerCase() == name)
+    const country = countries.find(country => country.country.toLowerCase() == name)
     if (country === undefined) {
-      res.status(404).send({ error: `Country: ${name} not found :(`})
+      res.status(404).send({ error: `Country: ${country} not found :(`})
     }
     res.send(country)
 })
