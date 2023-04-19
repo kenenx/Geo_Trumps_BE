@@ -54,7 +54,8 @@ app.put("/players/:user", (req, res) => {
             id: ++players.length,
         };
         players.push(newPlayer);
-        players.splice(1,1)
+        players.splice((players.length - 2),1) 
+
 
         res.status(200).send(newPlayer);
     }
