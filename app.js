@@ -45,7 +45,7 @@ app.put("/players/:user", (req, res) => {
         playername => playername.user.toLowerCase() === req.params.user.toLowerCase()
     );
     if (newPlayer !== undefined) {
-        res.status(409).send({error: "Player already exists"})
+        res.status(409).send(newPlayer)
     } else {
         newPlayer = {
             user: req.params.user,
