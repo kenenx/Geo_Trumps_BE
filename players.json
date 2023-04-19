@@ -9,19 +9,19 @@
         "user":"Azeem",
         "password":"password",
         "score": 2,
-        "id": 1
+        "id": 2
     },
     {
         "user":"Chris",
         "password":"password",
         "score": 3,
-        "id": 1
+        "id": 3
     },
     {
         "user":"Thanu",
         "password":"password",
         "score": 4,
-        "id": 1
+        "id": 4
     }
 
 ]
