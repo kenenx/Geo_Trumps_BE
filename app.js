@@ -61,4 +61,15 @@ app.put("/players/:user", (req, res) => {
     }
 });
 
+app.get('/players/:user', (req, res) => {
+    const user = req.params.user.toLowerCase()
+
+    const player = players.find(player => player.user.toLowerCase() == user)
+    if (player === undefined) {
+      res.status(404).send({ error: `Player: ${user} not found :(`})
+    }
+    res.send(player)
+})
+
+
 module.exports = app;

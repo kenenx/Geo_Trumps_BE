@@ -4,6 +4,24 @@
         "password":"password",
         "score": 10,
         "id": 1
+    },
+    {
+        "user":"Azeem",
+        "password":"password",
+        "score": 10,
+        "id": 1
+    },
+    {
+        "user":"Chris",
+        "password":"password",
+        "score": 10,
+        "id": 1
+    },
+    {
+        "user":"Thanu",
+        "password":"password",
+        "score": 10,
+        "id": 1
     }
 
 ]
