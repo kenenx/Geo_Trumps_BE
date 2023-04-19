@@ -21,7 +21,7 @@ app.get('/countries', (req, res) => {
 
 app.get('/countries/random', (req, res) => {
     const randId = Math.floor(Math.random() * countries.length);
-    const country = countries.find(country => country.id == randId)
+    const country = countries[randId]
 
      res.send(country);
 })
@@ -40,9 +40,9 @@ app.get('/players', (req, res) => {
     res.send(players);
 })
 
-app.patch("/players/:user", (req, res) => {
-    const player = players.find(
-        (player) => player.user.toLowerCase() === req.params.user.toLowerCase()
+app.put("/players/:user", (req, res) => {
+    let player = players.find(
+        (playername) => playername.user.toLowerCase() === req.params.user.toLowerCase()
     );
     if (player === undefined) {
         player = {
