@@ -2,25 +2,25 @@
     {
         "user":"Kenen",
         "password":"password",
-        "score": 10,
+        "score": 1,
         "id": 1
     },
     {
         "user":"Azeem",
         "password":"password",
-        "score": 10,
+        "score": 2,
         "id": 1
     },
     {
         "user":"Chris",
         "password":"password",
-        "score": 10,
+        "score": 3,
         "id": 1
     },
     {
         "user":"Thanu",
         "password":"password",
-        "score": 10,
+        "score": 4,
         "id": 1
     }
 
