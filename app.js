@@ -41,21 +41,23 @@ app.get('/players', (req, res) => {
 })
 
 app.put("/players/:user", (req, res) => {
-    let player = players.find(
-        (playername) => playername.user.toLowerCase() === req.params.user.toLowerCase()
+    let newPlayer = players.find(
+        playername => playername.user.toLowerCase() === req.params.user.toLowerCase()
     );
-    if (player === undefined) {
-        player = {
+    if (newPlayer !== undefined) {
+        res.status(409).send({error: "Player already exists"})
+    } else {
+        newPlayer = {
             user: req.params.user,
             password: "password",
             score: 0,
             id: ++players.length,
         };
-        players.push(player);
+        players.push(newPlayer);
+        players.splice((players.length - 2),1) 
 
-        return res.status(200).send(player);
-    } else {
-        res.send(player);
+
+        res.status(200).send(newPlayer);
     }
 });
 
