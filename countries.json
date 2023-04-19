@@ -1,4 +1,4 @@
-const countries = [
+[
   {
     "id": 1,
     "country": "Australia",
@@ -169,4 +169,4 @@ const countries = [
     "population": 66460344,
     "independence": 1066
   }
-];
+]
