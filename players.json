@@ -1,19 +1,19 @@
 [
     {
         "user":"Kenen",
-        "password":"password",
+        "password":"pass",
         "score": 1,
         "id": 1
     },
     {
         "user":"Azeem",
-        "password":"password",
+        "password":"word",
         "score": 2,
         "id": 2
     },
     {
         "user":"Chris",
-        "password":"password",
+        "password":"wordpass",
         "score": 3,
         "id": 3
     },

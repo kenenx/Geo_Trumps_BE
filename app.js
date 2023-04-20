@@ -53,7 +53,7 @@ app.put("/players/:user/:password", (req, res) => {
     } else {
         newPlayer = {
             user: req.params.user,
-            password: "password",
+            password: req.params.password,
             score: 0,
             id: ++players.length,
         };
