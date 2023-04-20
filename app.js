@@ -61,6 +61,25 @@ app.put("/players/:user", (req, res) => {
     }
 });
 
+app.patch("/players/:user", (req,res) => {
+    let playerScore = players.find(
+        playername => playername.user.toLowerCase() === req.params.user.toLowerCase()
+    );
+    if (playerScore === undefined) {
+        return res.status(404).send({ error: `Player: ${playerScore.user} not found :(`})
+    } else {
+        playerScore = {
+            user: playerScore.user,
+            password: playerScore.password,
+            score: (playerScore.score + 1),
+            id: playerScore.id
+        };
+        const idx = playerScore.id
+        players[idx - 1]= playerScore
+        res.status(200).send(playerScore)
+    }   
+});
+
 app.get('/players/:user', (req, res) => {
     const user = req.params.user.toLowerCase()
 
