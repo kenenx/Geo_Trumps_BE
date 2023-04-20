@@ -40,12 +40,16 @@ app.get('/players', (req, res) => {
     res.send(players);
 })
 
-app.put("/players/:user", (req, res) => {
+app.put("/players/:user/:password", (req, res) => {
     let newPlayer = players.find(
         playername => playername.user.toLowerCase() === req.params.user.toLowerCase()
     );
+    console.log(req.params.password)
     if (newPlayer !== undefined) {
+        if  (newPlayer.password === req.params.password){
         res.send(newPlayer)
+        } else {
+        res.status(404).send({ error: `Password incorrect :(`})}
     } else {
         newPlayer = {
             user: req.params.user,
